@@ -12,10 +12,10 @@
     "rndNum = random.randrange(0, 10)\n" +
     "if rndNum &lt; len(drivers):\n" +
     "	print(&quot;You&#039;ve lost &quot; + drivers[rndNum] + &quot; because they drove off the Rainbow Road.&quot;)\n" +
-    "    del drivers[rndNum]\n" +
+    "   del drivers[rndNum]\n" +
     "else:\n" +
     "	print(&quot;You&#039;ve unlocked Yoshi!&quot;)\n" +
-    "    drivers.append(&quot;Yoshi&quot;)\n" +
+    "   drivers.append(&quot;Yoshi&quot;)\n" +
     "   \n" +
     "print(&quot;You now have the following drivers:&quot;)\n" +
     "for driver in drivers:\n" +
