@@ -8,15 +8,14 @@
 <script type="text/javascript"> 
 (function(){
   var initial = "import random\n" +
-    "drivers = [&quot;Bowser&quot;, &quot;Luigi&quot;, &quot;Yoshi&quot;, &quot;Peach&quot;]\n" +
+    "drivers = [&quot;Bowser&quot;,&quot;Mario&quot;,&quot;Yoshi&quot;,&quot;Peach&quot;]\n" +
     "rndNum = random.randrange(0, 10)\n" +
     "if rndNum &lt; len(drivers):\n" +
     "	print(&quot;You&#039;ve lost &quot; + drivers[rndNum] + &quot; because they drove off the Rainbow Road.&quot;)\n" +
-    "   del drivers[rndNum]\n" +
+    "	del drivers[rndNum]\n" +
     "else:\n" +
-    "	print(&quot;You&#039;ve unlocked Mario!&quot;)\n" +
-    "   drivers.append(&quot;Mario&quot;)\n" +
-    "   \n" +
+    "	print(&quot;You&#039;ve unlocked Luigi!&quot;)\n" +
+    "	drivers.append(&quot;Luigi&quot;)\n" +
     "print(&quot;You now have the following drivers:&quot;)\n" +
     "for driver in drivers:\n" +
     "	print(driver)";
