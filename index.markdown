@@ -7,18 +7,24 @@
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "import random\n" +
-    "drivers = [&quot;Bowser&quot;,&quot;Mario&quot;,&quot;Yoshi&quot;,&quot;Peach&quot;]\n" +
-    "rndNum = random.randrange(0, 10)\n" +
-    "if rndNum &lt; len(drivers):\n" +
-    "	print(&quot;You&#039;ve lost &quot; + drivers[rndNum] + &quot; because they drove off the Rainbow Road.&quot;)\n" +
-    "	del drivers[rndNum]\n" +
-    "else:\n" +
-    "	print(&quot;You&#039;ve unlocked Luigi!&quot;)\n" +
-    "	drivers.append(&quot;Luigi&quot;)\n" +
-    "print(&quot;You now have the following drivers:&quot;)\n" +
-    "for driver in drivers:\n" +
-    "	print(driver)";
+  var initial = "def rate_score(score):\n" +
+    "    &quot;&quot;&quot;Rate a score and return a string&quot;&quot;&quot;\n" +
+    "    if score &lt; 1000:\n" +
+    "        return &quot;Nothing to be proud of.&quot;\n" +
+    "    elif score &lt; 10000:\n" +
+    "        return &quot;Not bad.&quot;\n" +
+    "    else:\n" +
+    "        return &quot;Nice!&quot;\n" +
+    "def main ():\n" +
+    "    &quot;&quot;&quot; calls the function with user inputed scores&quot;&quot;&quot;\n" +
+    "    print (&quot;Welcome to Chapter 6, Project 1!&quot;)\n" +
+    "    yourscore = int(input(&quot;What was your score?&quot;))\n" +
+    "    while yourscore != -1:\n" +
+    "        print (rate_score(yourscore))\n" +
+    "        yourscore = int(input(&quot;What was your score? (-1 to end) &quot;))\n" +
+    "   \n" +
+    "    input(&quot;Press the enter key to exit.&quot;)\n" +
+    "main()";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "sortable",
     "max_wrong_lines": 10,
