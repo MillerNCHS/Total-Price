@@ -7,24 +7,12 @@
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "def rate_score(score):\n" +
-    "    &quot;&quot;&quot;Rate a score and return a string&quot;&quot;&quot;\n" +
-    "    if score &lt; 1000:\n" +
-    "        return &quot;Nothing to be proud of.&quot;\n" +
-    "    elif score &lt; 10000:\n" +
-    "        return &quot;Not bad.&quot;\n" +
-    "    else:\n" +
-    "        return &quot;Nice!&quot;\n" +
-    "def main ():\n" +
-    "    &quot;&quot;&quot; calls the function with user inputed scores&quot;&quot;&quot;\n" +
-    "    print (&quot;Welcome to Chapter 6, Project 1!&quot;)\n" +
-    "    yourscore = int(input(&quot;What was your score?&quot;))\n" +
-    "    while yourscore != -1:\n" +
-    "        print (rate_score(yourscore))\n" +
-    "        yourscore = int(input(&quot;What was your score? (-1 to end) &quot;))\n" +
-    "   \n" +
-    "    input(&quot;Press the enter key to exit.&quot;)\n" +
-    "main()";
+  var initial = "price = int(input(&quot;How much is the item? &quot;))\n" +
+    "# Tax rate is 6%\n" +
+    "tax = .06\n" +
+    "# Add tax to the price\n" +
+    "totalPrice = price + (price * tax)\n" +
+    "print(&quot;Your total with tax is&quot;,round(totalPrice, 2))";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "sortable",
     "max_wrong_lines": 10,
